@@ -9,7 +9,7 @@ function addup(){
 	var text=j_new.value;
 	if(text!=""){
 	j_err.innerHTML=""
-    arr[count] = "<div id='tasks'> <input type='checkbox' id='box+count'>"+text+
+    arr[count] = "<div id='tasks'> <input type='checkbox' id='box+count'>"+(count+1)+".  "+text+
     "</div><br>"
     j_main.innerHTML+=arr[count];
     j_new.value="";
