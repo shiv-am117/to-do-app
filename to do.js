@@ -9,8 +9,8 @@ function addup(){
 	var text=j_new.value;
 	if(text!=""){
 	j_err.innerHTML=""
-    arr[count] = "<div id='tasks'> <input type='checkbox' id='box+count'>"+(count+1)+".  "+text+
-    "</div><br>"
+    arr[count] = "<br><div id='tasks'> <input type='checkbox' id='box+count'>"+(count+1)+".  "+text+
+    "</div>"
     j_main.innerHTML+=arr[count];
     j_new.value="";
     count++;
@@ -22,12 +22,12 @@ function addup(){
 
 function finishup(){
 	if(count==0) {
-		j_err.innerHTML +=" Do something today!!"
+		j_err.innerHTML =" Do something today!!"
 	}
 	else{
 		j_add_event.style.color="white";
 		
-		j_add_event.style.height="10%";
+		j_add_event.style.height="60px";
 		j_add_event.style.top="15%";
 		j_add_event.innerHTML="<h1>Things to do today</h1>"
 
